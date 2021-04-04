@@ -9,13 +9,14 @@
      font-size: 36px;
      font-weight: 400;
      text-align: left;
+     line-height: 42px;
  }
 
  p {
      font-family: 'IBM Plex Mono', monospace;
      font-size: 14px;
      font-weight: 300;
-     text-align: justify;
+     text-align: left;
      line-height: 22px;
  }
 
@@ -45,6 +46,7 @@
      background-color: #fff;
      display: flex;
      justify-content: space-between;
+     z-index: 10;
  }
 
  div.logo {
@@ -119,6 +121,7 @@
      font-weight: 500;
      z-index: -1;
  }
+
  #podcast-container {
      width: 100vw;
      height: 1280px;
@@ -128,22 +131,93 @@
      top: 371px;
      z-index: -1;
  }
- .titulo-episodios{
+
+ .titulo-episodios {
      color: white;
      top: 64px;
      margin-left: 16px;
      position: relative;
  }
- iframe.podcast{
+
+ iframe.podcast {
      border-radius: 10px;
      margin-left: 11px;
      margin-right: 11px;
      display: inline-block;
-     top:90px;
+     top: 90px;
      position: relative;
  }
- #phone-img{
-     position:absolute;
+
+ #phone-img {
+     position: absolute;
      margin-top: 48px;
      top: 1470px;
+ }
+
+ #de-donde-venimos {
+     position: absolute;
+     top: 2080px;
+     margin-left: 16px;
+     margin-top: 27px;
+     width: 343px;
+ }
+
+ #de-donde-venimos>p {
+     margin-top: 8px;
+ }
+
+ #invitadas-estelares {
+     top: 2440px;
+     margin-left: 16px;
+     width: 343px;
+     position: absolute;
+ }
+
+ #contenedor-img {
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     width: 100vw;
+     top: 2530px;
+     margin-top: 14px;
+ }
+
+ #algunos-temas {
+     top: 4260px;
+     margin-left: 16px;
+     width: 343px;
+     position: absolute;
+     margin-top: 48px;
+ }
+/* Sección iconos */
+ #contenedor-iconos {
+     top: 4380px;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-content: center;
+     width: 100vw;
+     height: 911px;
+ }
+
+ img.icon {
+     margin-top: 13px;
+     margin-right: 120px;
+     margin-left: 136px;
+     align-self: center;
+     position: relative;
+ }
+
+ div.texto-icono {
+     position: absolute;
+     width: 343px;
+     font-family: 'IBM Plex Sans', sans-serif;
+     font-size: 24px;
+     color: #060A24;
+     left: 0;
+     margin: 13px 16px;
+     text-align: center;
+     font-weight: 600;
+
  }

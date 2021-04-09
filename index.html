@@ -20,8 +20,15 @@
                 <img src="./Images/svg/logo.svg" alt="Logo Pale Blue Dot" width="24px">
             </div>
             <!-- Hamburger icon-->
-            <label for="menu">&#9776;</label>
             <input type="checkbox" id="menu" />
+            <label for="menu" class="label-burger">
+                <div class="container-burger">
+                    <div class="linea linea-top"></div>
+                    <div class="linea linea-med"></div>
+                    <div class="linea linea-low"></div>
+                </div>
+            </label>
+
             <!-- Menú desplegado -->
             <div class="menu-desplegado">
                 <ul class="contenedor-menu-items text-btn">
@@ -34,7 +41,7 @@
         </div>
         <!-- Texto y botón -->
         <div class="titulo">
-            <h1>Hello <span>world</span> blue dot.</h1>
+            <h1>Hello <span>world</span> pale blue dot.</h1>
         </div>
         <div class="texto">
             <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
@@ -43,21 +50,22 @@
         <!-- Podcasts -->
         <div id="podcast-container">
             <h1 class="titulo-episodios">Episodios</h1>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/4XezPlgbw8oQOqEENePFLp" width="353  "
-                height="232" frameborder="0" allowtransparency="true" allow="encrypted-media" class="podcast"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/7HwZcXQ85RlN6xO41wZvpb" width="353" height="232"
+            <iframe src="https://open.spotify.com/embed-podcast/episode/4XezPlgbw8oQOqEENePFLp" width="93%" height="232"
+                frameborder="0" allowtransparency="true" allow="encrypted-media" class="podcast"></iframe>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7HwZcXQ85RlN6xO41wZvpb" width="93%" height="232"
                 frameborder="0" allowtransparency="true" allow="encrypted-media" class="podcast"
                 style="margin-top: 11px;"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/5Cfg4jBXQthUmEEuTFYHbd" width="353" height="232"
+            <iframe src="https://open.spotify.com/embed-podcast/episode/5Cfg4jBXQthUmEEuTFYHbd" width="93%" height="232"
                 frameborder="0" allowtransparency="true" allow="encrypted-media" class="podcast"
                 style="margin-top: 11px;"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/6WVCnyOx6lRa71Z0y61nQe" width="353" height="232"
+            <iframe src="https://open.spotify.com/embed-podcast/episode/6WVCnyOx6lRa71Z0y61nQe" width="93%" height="232"
                 frameborder="0" allowtransparency="true" allow="encrypted-media" class="podcast"
                 style="margin-top: 11px;"></iframe>
         </div>
         <div id="phone-img">
             <img src="./Images/png/phone.png" width="360" alt="The secret history of women in coding">
         </div>
+        <!-- de donde venimos text -->
         <div id="de-donde-venimos">
             <h1>De dónde venimos</h1>
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the
@@ -104,7 +112,9 @@
         </div>
         <!-- Footer -->
         <div id="footer">
-            <div class="text-footer"><p>© 2019— Hello blue pale dot</p></div>
+            <div class="text-footer">
+                <p>© 2019— Hello blue pale dot</p>
+            </div>
             <div class="contenedor-iconos-redes">
                 <div><img src="./Images/svg/spotify-icon.svg" alt="Spotify" width="20px"></div>
                 <div><img src="./Images/svg/instagram-icon.svg" alt="Instagram" width="20px"></div>

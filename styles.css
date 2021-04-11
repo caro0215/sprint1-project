@@ -128,7 +128,7 @@ div.menu-desplegado {
     top: 44px;
     position: absolute;
     transition: all 0.4s ease-in;
-    transform: translateX(0);
+    /*transform: translate(100%);*/
     color: white;
     display: none;
 
@@ -145,7 +145,7 @@ div.menu-desplegado {
 
 /*Animación menú desplazable*/
 #menu:checked+.menu-desplegado {
-    transform: translateX(100%);
+    transform: translate(100);
     transition-timing-function: ease-in;
 }
 
@@ -224,20 +224,31 @@ iframe.podcast {
     top: 90px;
     position: relative;
     width: 301px;
+    margin-top: 11px;
+}
+/*info-phone-container*/
+div#info-phone-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    width: 320px;
+    height: 940px;
+    position: absolute;
+    margin-top: 64px;
+    top: 1450px;
+
 }
 /*phone image*/
 #phone-img {
-    position: absolute;
-    margin-top: 48px;
-    top: 1470px;
+    position: relative;
     width: 320px;
 }
 
 #de-donde-venimos {
-    position: absolute;
-    top: 2080px;
+    position: relative;
     margin-left: 16px;
-    margin-top: 27px;
+    margin-top: 10px;
     width: 288px;
 }
 

@@ -1,3 +1,4 @@
+@import url(query-desktop.css);
  * {
      margin: 0;
      padding: 0;
@@ -65,7 +66,7 @@
      margin: 10px;
  }
 
- /*Burger icon-animation*/
+ /*Burger icon*/
 
  label div.container-burger {
      width: 18px;
@@ -128,7 +129,8 @@
      transition: all 0.4s ease-in;
      transform: translateX(0);
      color: white;
-     display:fixed;
+     display: none;
+
  }
 
  .menu-item {
@@ -143,7 +145,7 @@
      transform: translateX(100%);
      transition-timing-function: ease-in;
  }
-
+/*fin nav-bar*/
  div.titulo {
      margin-top: 73px;
      position: relative;

@@ -17,9 +17,18 @@
         <!-- Barra de navegación -->
         <div id="nav-bar">
             <div class="logo">
-                <a href="#top"><img src="./Images/svg/logo.svg" alt="Logo Pale Blue Dot" width="24px"></a>
+                <a href="#top"><img src="./Images/svg/logo.svg" alt="Logo Pale Blue Dot"></a>
             </div>
-            <!-- Hamburger icon-->
+            <!-- Desktop menu -->
+            <nav class="desktop-menu">
+                <ul class="desktop-menu-list">
+                    <li class="selector-menu text-btn"><a href="#podcast-container">episodios</a></li>
+                    <li class="selector-menu text-btn"><a href="#de-donde-venimos">nosotros</a></li>
+                    <li class="selector-menu text-btn"><a href="#invitadas-estelares">entrevistas</a></li>
+                    <li class="selector-menu text-btn"><a href="#titulo-iconos">tópicos</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile menu - hamburger icon-->
             <input type="checkbox" id="menu" />
             <label for="menu" class="label-burger">
                 <div class="container-burger">
@@ -37,9 +46,10 @@
                 <div class="text-btn menu-item"><a href="#titulo-iconos">tópicos</a></div>
             </div>
         </div>
+
         <!-- Texto y botón -->
         <div class="titulo">
-            <h1>Hello <span>world</span> pale blue dot.</h1>
+            <h1>Hello <span>world</span> pale blue dot<span class="dot">.</span></h1>
         </div>
         <div class="texto">
             <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>

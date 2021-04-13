@@ -112,26 +112,24 @@ label div.container-burger {
 }
 
 /*Show-hide menu*/
-div.menu-desplegado {
-    display: none;
-}
-
 div#nav-bar input:checked~.menu-desplegado {
-    display: inline-block;
+    /*display: inline-block;*/
+    width: 100%;
+
+    /*transform: translateX(100%);*/
 }
 
 /* Menú desplegado*/
 div.menu-desplegado {
-    width: 100%;
+    width: 0%;
     background-color: #0000EC;
     height: 224px;
     top: 44px;
-    position: absolute;
-    
-    transform: translate(0%);
+    position: fixed;
     color: white;
-    /*display: none;*/
-
+    transition: width .4s ease-in;
+    overflow: hidden;
+    /*transform: translateX(0%);*/
 }
 
 .menu-item {
@@ -143,25 +141,19 @@ div.menu-desplegado {
     text-decoration: none;
 }
 
-/*Animación menú desplazable*/
-#menu:checked+label.label-burger+.menu-desplegado {
-    transform: translate(100%);
-    transition: all 0.4s ease;
-
-}
-
 /*fin nav-bar*/
 /* Top info and btn */
-div#header-info{
+div#header-info {
     width: 100%;
     display: flex;
     position: absolute;
 }
+
 div.titulo {
     margin-top: 73px;
     position: relative;
     left: 16px;
-    z-index: -1;
+    /*z-index: -1;*/
     width: 224px;
 }
 
@@ -171,7 +163,7 @@ div.titulo span {
 
 div.texto {
     position: absolute;
-    z-index: -1;
+    /*z-index: -1;*/
     margin-top: 189px;
     left: 16px;
     width: 288px;
@@ -187,14 +179,11 @@ button.btn-top {
     border: none;
     color: #060A24;
     font-weight: 500;
-    z-index: -1;
-}
-button.btn-top>a{
-    text-decoration: none;
-    color:#060A24;
+    z-index: 1;
 }
 
-@media screen and (min-width: 320px) and (max-width:769px){
+
+@media screen and (min-width: 320px) and (max-width:769px) {
 
     /*hide desktop menu*/
     div#main-container nav.desktop-menu {
@@ -213,7 +202,7 @@ button.btn-top>a{
     clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
     position: absolute;
     top: 371px;
-    z-index: -1;
+    /*z-index: -1;*/
     width: 320px;
     margin: 0;
     padding: 0;
@@ -237,6 +226,7 @@ iframe.podcast {
     width: 301px;
     margin-top: 11px;
 }
+
 /*info-phone-container*/
 div#info-phone-container {
     display: flex;
@@ -250,6 +240,7 @@ div#info-phone-container {
     top: 1450px;
 
 }
+
 /*phone image*/
 #phone-img {
     position: relative;
@@ -274,6 +265,7 @@ div#info-phone-container {
     position: absolute;
     margin-top: 34px;
 }
+
 /*imagenes*/
 div#contenedor-img {
     display: flex;
@@ -282,7 +274,7 @@ div#contenedor-img {
     width: 320px;
     top: 2560px;
     margin-top: 14px;
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 /* Titulo iconos */
@@ -336,9 +328,10 @@ div#contacto {
     clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 0% 100%);
     position: absolute;
     top: 5080px;
-    z-index: -1;
+    /*z-index: -1;*/
 }
-div#contacto h1.titulo-episodios{
+
+div#contacto h1.titulo-episodios {
     text-align: center;
     width: 288px;
 }
@@ -353,7 +346,7 @@ button.btn-bottom {
     border: none;
     color: #060A24;
     font-weight: 500;
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 div#footer {

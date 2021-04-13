@@ -106,7 +106,7 @@
     }
 
     /*btn top*/
-    div#header-info button.btn-top {
+    div#header-info .btn-top {
         margin-left: 31%;
         width: 226px;
         height: 56px;
@@ -114,7 +114,7 @@
         margin-top: 260px;
     }
 
-    div#header-info button.btn-top:hover{
+  #header-info .btn-top:hover{
         background-image: linear-gradient(to right, #00F0B8,#0000FE);
         color: white;
     }
@@ -243,7 +243,7 @@
     }
     /*footer*/
     div#main-container div#footer{
-        width: 1440px;
+        width: 100vw;
         height: 60px;
         margin-top: 36px;
         top: 4110px;

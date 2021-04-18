@@ -1,4 +1,4 @@
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
     h1 {
         font-size: 64px;
     }
@@ -13,9 +13,10 @@
 
     /* contenedor principal*/
     div#main-container {
-        width: 1440px !important;
+        width: 100vw !important;
         margin: 0 auto;
         position: absolute;
+        overflow-x: hidden;
 
     }
 
@@ -24,9 +25,9 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        position: absolute;
-        padding-left: 20%;
-        padding-right: 20%;
+        position: relative;
+        /*padding-left: 20%;
+        padding-right: 20%;*/
 
     }
 
@@ -78,6 +79,7 @@
         color: #00F3BB;
         text-decoration: line-through;
     }
+
     /*a:active*/
     li.selector-menu>a:active {
         color: #060A24 56%;
@@ -90,7 +92,7 @@
 
     /* Top info and btn */
     div#main-container div.titulo {
-        padding-left: 30%;
+        padding-left: 20%;
         margin-top: 120px;
         position: absolute;
         width: 100%;
@@ -105,22 +107,21 @@
     /*texto top*/
     div#main-container div.texto {
         width: 628px;
-        margin-left: 30%;
+        margin-left: 20%;
         position: relative;
         margin-top: 170px;
     }
 
     /*btn top*/
     div#header-info .btn-top {
-        margin-left: 31%;
+        margin-left: 21%;
         width: 226px;
         height: 56px;
-        position: absolute;
         margin-top: 260px;
     }
 
-  #header-info .btn-top:hover{
-        background-image: linear-gradient(to right, #00F0B8,#0000FE);
+    #header-info .btn-top:hover {
+        background-image: linear-gradient(to right, #00F0B8, #0000FE);
         color: white;
     }
 
@@ -129,38 +130,38 @@
         width: 100vw;
         height: 1055px;
         margin: 0;
-        padding-left: 25%;
-        padding-right: 22%;
         left: 0;
         top: 310px;
+        padding: 0 10%;
         clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-flow: row wrap;
         align-content: flex-start;
-        
     }
 
     div#podcast-container h1.titulo-episodios {
-        margin-left: 4%;
         top: 150px;
         position: absolute;
-        display: inline-block;
+        align-self: flex-start;
+        width: 100%;
+        padding-left: 20%;
     }
 
     div#podcast-container iframe.podcast {
-        width: 584px;
+        width: 40%;
         height: 232px;
         top: 250px;
-        margin-bottom: 72px;
+        position: relative;
+        align-items: center;
 
     }
 
     /*info-phone-container*/
     div#main-container div#info-phone-container {
-        width: 1440px;
+        width: 100vw;
         height: auto;
-        margin-left: 20%;
+        /*margin-left: 10%;*/
         margin-top: 0;
         top: 1150px;
 
@@ -168,7 +169,7 @@
 
     /*phone image*/
     div#main-container div#phone-img {
-        width: 458px;
+        width: 450px;
         position: relative;
 
     }
@@ -184,7 +185,7 @@
     /*images-title*/
     div#main-container h1#invitadas-estelares {
         top: 2020px;
-        margin-left: 30%;
+        margin-left: 20%;
         width: 100%;
     }
 
@@ -204,25 +205,35 @@
     div#main-container div#titulo-iconos {
         width: 100%;
         top: 3180px;
-        margin-left: 30%;
+        margin-left: 20%;
     }
+
     /* Sección iconos-contenedor */
-    div#main-container div#contenedor-iconos{
+    div#main-container div#contenedor-iconos {
         flex-direction: row;
         top: 2940px;
-        width: 1040px;
-        margin-left: 25%;
-        margin-right: 25%;
+        width: 100vw;
+        padding-left: 15%;
+        padding-right: 15%;
         align-content: center;
         justify-content: space-between;
         align-items: center;
     }
-    div#contenedor-iconos div.texto-icono{
+
+    div#main-container img.icon {
+        width: 30%;
+        /*margin-left: 40px;
+        margin-right: 40px;*/
+        align-self: center;
+    }
+
+    div#contenedor-iconos div.texto-icono {
         width: 220px;
         margin-left: 15%;
     }
+
     /* poligono footer-contacto */
-    div#main-container div#contacto{
+    div#main-container div#contacto {
         width: 100vw;
         top: 3600px;
         clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
@@ -232,32 +243,38 @@
         justify-content: center;
         align-content: center;
     }
-    div#main-container div#contacto h1.titulo-episodios{
+
+    div#main-container div#contacto h1.titulo-episodios {
         width: 692px;
         align-self: center;
     }
-    div#contacto button.btn-bottom{
+
+    div#contacto button.btn-bottom {
         width: 345px;
         align-self: center;
 
     }
-    div#contacto button.btn-bottom:hover{
-        background-image: linear-gradient(to right, #00F0B8,#0000FE);
+
+    div#contacto button.btn-bottom:hover {
+        background-image: linear-gradient(to right, #00F0B8, #0000FE);
         color: white;
 
     }
+
     /*footer*/
-    div#main-container div#footer{
+    div#main-container div#footer {
         width: 100vw;
         height: 60px;
         margin-top: 36px;
         top: 4110px;
         justify-content: space-between;
-        padding-left: 30%;
+        align-content: center;
+        padding: 0 20%;
     }
-    div#main-container div#footer div.contenedor-iconos-redes{
+
+    div#main-container div#footer div.contenedor-iconos-redes {
         margin-top: 0;
-        margin-right: 20%;
+        /*margin-right: 20%;*/
     }
 
 

@@ -1,0 +1,139 @@
+@media screen and (min-width:321px) and (max-width:768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    /* contenedor principal*/
+    body div#main-container {
+        width: 100vw !important;
+    }
+
+    /*Nav bar*/
+    div#main-container div#nav-bar {
+        width: 100%;
+        height: 50px;
+        padding-right: 10px;
+    }
+
+    /* Top info and btn */
+    div#main-container div.titulo {
+        width: 100%;
+    }
+
+    /*Blue dot*/
+    div.titulo span.dot {
+        color: #0000EC;
+        text-decoration: none;
+    }
+
+    div#main-container div.texto {
+        width: 80%;
+        margin-top: 130px;
+    }
+
+    /*btn top*/
+    div#header-info .btn-top {
+        height: 46px;
+        margin-top: 260px;
+        margin-top: 200px;
+    }
+
+    /*Podcast container*/
+    div#main-container div#podcast-container {
+        width: 100vw;
+        top: 260px;
+        height: inherit;
+    }
+    /*iframes podcast*/
+    div#podcast-container iframe.podcast{
+        width: 360px;
+    }
+    /*info-phone-container*/
+    div#main-container div#info-phone-container {
+        width: 100%;
+        top: 720px;
+    }
+    /*phone image*/
+    div#main-container div#phone-img{
+        width: 360px ;
+    }
+    /*text by phone*/
+    div#main-container div#de-donde-venimos{
+        align-self: center;
+    }
+    /*images-title*/
+    div#main-container h1#invitadas-estelares{
+        width: 100%;
+        top: 1560px;
+    }
+    /*images-container*/
+    div#main-container div#contenedor-img{
+        flex-flow: row wrap;
+        width: 100vw;
+        top: 1660px;
+    }
+    div#contenedor-img img.img-invitadas {
+        width: 50%;
+    }
+    /* Sección iconos-titulo */
+    div#main-container div#titulo-iconos {
+        width: 100%;
+        top: 2560px;
+    }
+    /* Sección iconos-contenedor */
+    div#main-container div#contenedor-iconos{
+        flex-direction: row;
+        top: 2600px;
+        width: 100vw;
+        padding-right: 5%;
+        padding-left: 5%;
+        height: 220px;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div#main-container img.icon{
+        width: 40%;
+        margin-left: 40px;
+        margin-right: 40px;
+        align-self: center;
+    }
+    div#contenedor-iconos div.texto-icono{
+        width: 160px;
+        margin: 0;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    /* poligono footer-contacto */
+    div#main-container div#contacto{
+        width: 100vw;
+        top: 2860px;
+        height: 250px;
+    }
+    div#main-container div#contacto h1.titulo-episodios{
+        width: 100%;
+    }
+    div#contacto button.btn-bottom{
+        align-self: center;
+        margin-left:30%;
+
+    }
+    /*footer*/
+    div#main-container div#footer{
+        width: 100vw;
+        height: 20px;
+        top: 3140px;
+        margin: 0;
+    }
+    div#main-container div#footer div.text-footer{
+        align-self: center;
+    }
+    div#main-container div#footer div.contenedor-iconos-redes{
+        align-items: center;
+        margin-top: 0;
+    }
+}

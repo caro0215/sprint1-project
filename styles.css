@@ -36,9 +36,10 @@ p {
 /* contenedor principal*/
 body div#main-container {
     display: flex;
+    flex-direction: column;
     width: 320px;
     height: 100%;
-    position: absolute;
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -56,7 +57,7 @@ div#nav-bar {
 
 div.logo {
     margin-top: 10px;
-    margin-left: 16px;
+    padding-left: 16px;
     width: 24px;
 }
 
@@ -114,10 +115,7 @@ label div.container-burger {
 
 /*Show-hide menu*/
 div#nav-bar input:checked~.menu-desplegado {
-    /*display: inline-block;*/
     width: 100%;
-
-    /*transform: translateX(100%);*/
 }
 
 /* Menú desplegado*/
@@ -130,7 +128,6 @@ div.menu-desplegado {
     color: white;
     transition: width .4s ease-in;
     overflow: hidden;
-    /*transform: translateX(0%);*/
 }
 
 .menu-item {
@@ -147,11 +144,14 @@ div.menu-desplegado {
 div#header-info {
     width: 100%;
     display: flex;
-    position: absolute;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 29px;
 }
 
 div.titulo {
-    margin-top: 73px;
+    margin-top: 29px;
     position: relative;
     left: 16px;
     width: 224px;
@@ -162,17 +162,17 @@ div.titulo span {
 }
 
 div.texto {
-    position: absolute;
-    margin-top: 189px;
+    position: relative;
+    margin-top: 16px;
     left: 16px;
     width: 288px;
 }
 
 button.btn-top {
-    position: absolute;
+    position: relative;
     width: 288px;
     height: 48px;
-    margin-top: 293px;
+    margin-top: 36px;
     margin-left: 16px;
     background-color: #00F3BB;
     border: none;
@@ -199,43 +199,49 @@ button.btn-top {
     height: 1280px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0% 3%, 100% 0%, 100% 97%, 0% 100%);
-    position: absolute;
-    top: 371px;
-    width: 320px;
-    margin: 0;
-    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 24px;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 40%;
+    padding-right: 0;
+    padding-left: 0;
+    z-index: 1;
+
 }
 
 .titulo-episodios {
     color: white;
-    top: 64px;
-    margin-left: 16px;
+    padding-left: 16px;
     position: relative;
-    width: 288px;
+    width: 100%;
 }
 
 iframe.podcast {
     border-radius: 10px;
     margin-left: 11px;
     margin-right: 11px;
-    display: inline-block;
-    top: 90px;
+    display: flex;
     position: relative;
     width: 301px;
     margin-top: 11px;
+    
 }
 
 /*info-phone-container*/
 div#info-phone-container {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     width: 320px;
-    height: 940px;
+    height: auto;
     position: relative;
-    margin-top: 64px;
-    top: 1450px;
+    margin-top: -80px;
+    z-index: 3;
 
 }
 
@@ -247,111 +253,122 @@ div#info-phone-container {
 
 #de-donde-venimos {
     position: relative;
-    margin-left: 16px;
-    margin-top: 10px;
+    margin-top: 54px;
     width: 288px;
+    padding-left: 16px;
+   
 }
 
 #de-donde-venimos>p {
     margin-top: 8px;
 }
-
-#invitadas-estelares {
-    top: 2440px;
-    margin-left: 16px;
-    width: 288px;
-    position: absolute;
-    margin-top: 34px;
-}
-
 /*imagenes*/
 div#contenedor-img {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: 320px;
-    top: 2560px;
-    margin-top: 14px;
-    /*z-index: -1;*/
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 54px;
 }
-
-/* Titulo iconos */
-#titulo-iconos {
-    top: 4050px;
-    margin-left: 16px;
+#invitadas-estelares {
+    padding-left: 16px;
     width: 288px;
-    position: absolute;
-    margin-top: 16px;
+    position: relative;
+    margin-bottom: 15px;
 }
 
 /* Sección iconos */
 #contenedor-iconos {
-    top: 4125px;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
     width: 320px;
-    height: 911px;
-    margin-top: 24px;
+    height: auto;
+    padding-top: 20px;
+    margin: 0 auto;
+    /*padding: 0 16px;*/
 }
+/* Titulo iconos */
+#titulo-iconos {  
+    padding-left: 16px;
+    width: 100%;
+    position: relative;
+    margin: 24px 0;
 
-img.icon {
-    margin-top: 13px;
+}
+.icon{
+    align-self: center;
+}
+/*div.icon {
+    /*margin-top: 13px;
     margin-right: 108px;
     margin-left: 108px;
-    align-self: center;
-    position: relative;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    /*position: relative;
+}*/
 
 div.texto-icono {
     position: relative;
-    width: 288px;
+    /*width: 288px;*/
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
     color: #060A24;
     left: 0;
-    margin: 13px 16px;
+    margin: 0 auto;
     text-align: center;
     font-weight: 600;
+    padding-bottom: 60px;
 
 }
 
 /* poligono footer */
 div#contacto {
-    width: 320px;
-    height: 341px;
+    width: 100%;
+    height: 400px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0% 8%, 100% 0%, 100% 100%, 0% 100%);
-    position: absolute;
-    top: 5080px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 60px 0;
+    margin: 30px 0;
    
 }
 
 div#contacto h1.titulo-episodios {
     text-align: center;
-    width: 288px;
+    width: 80%;
+    margin-left: 0;
+    align-self: center;
 }
 
 button.btn-bottom {
-    position: relative;
     width: 288px;
     height: 48px;
-    margin-top: 106px;
-    margin-left: 16px;
     background-color: #00F3BB;
     border: none;
     color: #060A24;
     font-weight: 500;
+    align-self: center;
+    margin-top: 20px;
     
 }
 
 div#footer {
     height: 80px;
     width: 100%;
-    position: absolute;
-    top: 5450px;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-content: space-evenly;

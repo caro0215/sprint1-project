@@ -301,20 +301,14 @@ div#contenedor-img {
     margin: 24px 0;
 
 }
-.icon{
+div .icon {
+    /*margin-top: 13px;*/
     align-self: center;
+    /*width: 100%;*/
+    height: 120px;
+    position: relative;
+    margin: 0 33.3%;
 }
-/*div.icon {
-    /*margin-top: 13px;
-    margin-right: 108px;
-    margin-left: 108px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
-    /*position: relative;
-}*/
 
 div.texto-icono {
     position: relative;
@@ -326,7 +320,7 @@ div.texto-icono {
     margin: 0 auto;
     text-align: center;
     font-weight: 600;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 
 }
 

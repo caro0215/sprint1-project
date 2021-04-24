@@ -85,9 +85,8 @@
 
     /* Sección iconos-contenedor */
     div#main-container div#contenedor-iconos {
-        width: 100vw;
+        width: 100%;
         height: auto;
-        margin: 0;
     }
 
     /* Sección iconos-titulo */
@@ -96,12 +95,10 @@
         align-self: flex-start;
         padding: 0;
     }
-    div#contenedor-iconos div.icon{
-        margin-right: 0;
-        margin-left: 0;
-        align-self: center;
-        padding-right: 10%;
-        padding-left: 10%;
+    div#contenedor-iconos .icon{
+        width: 100%;
+        margin: 0;
+        padding: 0 10%;
     }
 
     div#contenedor-iconos div.texto-icono {
